@@ -17,7 +17,8 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Speed Restriction System";
+            ViewData["Email"] = "alextkn@hotmail.com";
 
             return View();
         }
@@ -28,6 +29,13 @@ namespace SalesWebMvc.Controllers
 
             return View();
         }
+        public IActionResult ManageDivision()
+        {
+            ViewData["Message"] = "Division";
+
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {
